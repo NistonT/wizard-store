@@ -26,10 +26,45 @@
 		</header>
 
 		<section>
+			<div class="modal">
+				<form id="editForm">
+					<input type="hidden" id="orderId" name="id" />
+
+					<input type="text" name="title" placeholder="Название" required />
+					<input
+						type="text"
+						name="description"
+						placeholder="Описание"
+						required
+					/>
+					<input
+						type="text"
+						name="customerName"
+						placeholder="Заказчик"
+						required
+					/>
+					<input type="number" name="reward" placeholder="Награда" required />
+
+					<select name="status" required>
+						<option>новый</option>
+						<option>в процессе</option>
+						<option>завершён</option>
+						<option>отменён</option>
+					</select>
+
+					<button type="submit">Сохранить изменения</button>
+					<button type="button" class="cancel">Отмена</button>
+				</form>
+			</div>
+		</section>
+
+		<section>
 			<div class="data"></div>
 		</section>
 
 		<script type="module" src="./script/script.js"></script>
 		<script type="module" src="./script/api.js"></script>
+		<script type="module" src="./script/card.js"></script>
+		<script type="module" src="./script/delete.js"></script>
 	</body>
 </html>
