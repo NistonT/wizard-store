@@ -1,0 +1,9 @@
+header .wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+header .wrapper nav {
+	display: flex;
+	gap: 20px;
+}
