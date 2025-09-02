@@ -1,0 +1,118 @@
+.card-wizard {
+	background: var(--theme-color-3);
+	border: 2px solid var(--theme-border-color);
+	border-radius: 12px;
+	padding: 12px;
+	color: var(--theme-page-text-color);
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4),
+		inset 0 0 0 1px var(--theme-border-color);
+	transition: all 0.3s ease;
+	position: relative;
+	max-width: 500px;
+	margin: 1rem auto;
+}
+
+.title {
+	font-family: "Genshin-font";
+	font-size: 24px;
+	color: var(--title-color);
+	margin-bottom: 8px;
+}
+
+.description {
+	color: var(--pi-tabber-color);
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+.info-grid {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 12px;
+	font-size: 16px;
+}
+
+.info-grid span {
+	color: var(--title-color);
+}
+
+.status-pill {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.status-pill.новый {
+	background: rgba(211, 118, 240, 0.2);
+	color: var(--color-electro);
+	border: 1px solid rgba(211, 118, 240, 0.4);
+}
+
+.status-pill.завершён {
+	background: rgba(123, 180, 45, 0.2);
+	color: var(--color-dendro);
+	border: 1px solid rgba(123, 180, 45, 0.4);
+}
+
+.status-pill.отменён {
+	background: rgba(226, 49, 29, 0.2);
+	color: var(--color-pyro);
+	border: 1px solid rgba(226, 49, 29, 0.4);
+}
+
+.assignee {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	background: var(--theme-color-4);
+	border-radius: 12px;
+	border: 2px solid var(--theme-border-color);
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+
+.assignee-info {
+	color: var(--title-color);
+}
+
+.avatar {
+	width: 76px;
+	height: 76px;
+	border-radius: 50%;
+	border: 2px solid var(--color-electro);
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn {
+	padding: 10px 20px;
+	border-radius: 12px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	border: none;
+	color: #fff;
+}
+
+.btn-edit {
+	background: var(--theme-accent-color);
+	color: var(--color-hydro);
+}
+
+.btn-delete {
+	background: var(--color-pyro);
+}
+
+.btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+}
+
+.card-wizard:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 10px 22px rgba(0, 0, 0, 0.5),
+		inset 0 0 0 1px var(--theme-border-color);
+}

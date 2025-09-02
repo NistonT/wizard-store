@@ -1,9 +1,24 @@
-header .wrapper {
-	display: flex;
-	justify-content: space-between;
+header {
+	background-color: var(--header-color);
+	position: absolute;
+	width: 100%;
 }
 
-header .wrapper nav {
+header .wrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+
+.header .wrapper .logo {
+	font-family: "Genshin";
+	color: white;
+	font-size: 36px;
 	display: flex;
-	gap: 20px;
+	flex-direction: column;
+	text-align: center;
+}
+
+.header .wrapper .logo span {
+	font-size: 14px;
 }

@@ -4,28 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Wizard</title>
+		<link rel="stylesheet" href="./style/font.css" />
 		<link rel="stylesheet" href="./style/index.css" />
 		<link rel="stylesheet" href="./style/header.css" />
+		<link rel="stylesheet" href="./style/data.css" />
+		<link rel="stylesheet" href="./style/card.css" />
+		<link rel="stylesheet" href="./style/modal.css" />
+		<link rel="stylesheet" href="./style/modal-delete.css" />
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<div class="wrapper">
-				<div class="logo">WIZARD</div>
-				<nav>
-					<div>
-						<a href="/">Home</a>
-					</div>
-					<div>
-						<a href="orders.html">Orders</a>
-					</div>
-					<div>
-						<a href="newOrder.html">New order</a>
-					</div>
-				</nav>
+				<div class="logo">WIZARD <span>STORE</span></div>
 			</div>
 		</header>
 
-		<section>
+		<section class="modal-overlay">
 			<div class="modal">
 				<form id="editForm">
 					<input type="hidden" id="orderId" name="id" />
@@ -58,13 +52,29 @@
 			</div>
 		</section>
 
-		<section>
-			<div class="data"></div>
+		<div class="modal-delete-overlay">
+			<div class="modal-delete">
+				<div class="wrapper">
+					<p>Вы уверены, что хотите удалить заказ?</p>
+					<div class="buttons">
+						<button type="button" class="cancel">Отмена</button>
+						<button type="button" class="confirm">Удалить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="work">
+			<div class="wrapper">
+				<h2>Заказы</h2>
+				<div class="data"></div>
+			</div>
 		</section>
 
 		<script type="module" src="./script/script.js"></script>
 		<script type="module" src="./script/api.js"></script>
 		<script type="module" src="./script/card.js"></script>
 		<script type="module" src="./script/delete.js"></script>
+		<script type="module" src="./script/patch.js"></script>
 	</body>
 </html>

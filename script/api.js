@@ -1,5 +1,6 @@
 const BASE_URL = "orders/";
 
+// Запрос данных
 export async function getData(parameters = "?") {
 	try {
 		const response = await fetch(
@@ -18,6 +19,7 @@ export async function getData(parameters = "?") {
 	}
 }
 
+// Удаление данных
 export async function deleteData(id) {
 	try {
 		const response = await fetch(`http://localhost:3001/${BASE_URL}${id}`, {
@@ -33,6 +35,7 @@ export async function deleteData(id) {
 	}
 }
 
+// Изменение данных
 export async function patchData(id, data) {
 	try {
 		const response = await fetch(`http://localhost:3001/${BASE_URL}${id}`, {
