@@ -1,4 +1,5 @@
 import { deleteData } from "./api.js";
+import { dataIndex } from "./script.js";
 
 // айди заказа
 let currentDeleteId = null;
@@ -13,7 +14,7 @@ async function handlerDeleteData(id) {
 		currentData.innerHTML = "";
 		dataIndex();
 	} catch (error) {
-		console.error("Ошибка при удалении:", error);
+		console.log(error);
 	} finally {
 		currentDeleteId = null;
 	}
